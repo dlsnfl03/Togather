@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/custom_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#E84A4A"
+            app:title="커스텀 타이틀바"
+            app:titleTextColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@id/custom_toolbar">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="109dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/job" />
+
+                    <ImageView
+                        android:layout_width="109dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/center" />
+
+                    <ImageView
+                        android:layout_width="109dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/information" />
+
+                    <ImageView
+                        android:layout_width="109dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/free" />
+
+                    <ImageView
+                        android:layout_width="109dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/market" />
+
+                    <ImageView
+                        android:layout_width="109dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/promotion" />
+
+                    <ImageView
+                        android:layout_width="109dp"
+                        android:layout_height="75dp"
+                        android:src="@drawable/qna" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="즐겨찾는 게시판" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
