@@ -1,5 +1,3 @@
-import org.jetbrains.kotlin.storage.CacheResetOnProcessCanceled.enabled
-
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -37,12 +35,11 @@ android {
     }
 
     viewBinding {
-        enabled true
+        enable = true
     }
 
-    dataBinding {
-        enabled true
-    }
+
+
 }
 
 dependencies {

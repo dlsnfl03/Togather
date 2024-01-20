@@ -1,13 +1,10 @@
+package com.example.gdsc_2324_android
+
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.example.gdsc_2324_android.R
-import com.example.gdsc_2324_android.homeFragment
-import com.example.gdsc_2324_android.mapFragment
-import com.example.gdsc_2324_android.scrapFragment
-import com.example.gdsc_2324_android.settingFragment
-import com.example.gdsc_2324_android.writeFragment
+import com.example.gdsc_2324_android.databinding.ActivityBottomBinding
 
 
 private const val TAG_WRITE = "write_fragment"
@@ -17,12 +14,10 @@ private const val TAG_SCARP = "scarp_fragment"
 private const val TAG_SETTING = "setting_fragment"
 
 class bottomActivity : AppCompatActivity() {
-
-    private lateinit var binding : ActivityBinding
-
+    private lateinit var binding : ActivityBottomBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityBinding.inflate(layoutInflater)
+        binding = ActivityBottomBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
 
