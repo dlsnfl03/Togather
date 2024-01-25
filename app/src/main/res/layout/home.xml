@@ -14,14 +14,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/main_org">
-        <ImageView
-            android:id="@+id/btn_menu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icon_search"
-            android:paddingVertical="20dp">
-        </ImageView>
+        android:background="@color/main_org"
+        android:paddingVertical="20dp">
 
         <!--
         <ImageView
@@ -60,19 +54,18 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnv_home"
         android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_height="80dp"
         android:background="@drawable/style_home_bnv"
-        android:paddingHorizontal="15dp"
+        android:paddingHorizontal="5dp"
         app:itemActiveIndicatorStyle="@style/Widget.GDSC_2324_BottomNavigationView.ActiveIndicator"
         app:itemIconSize="30dp"
-        app:itemPaddingBottom="10dp"
-        app:itemPaddingTop="6dp"
+        app:itemPaddingBottom="15dp"
+        app:itemPaddingTop="15dp"
         app:itemRippleColor="@null"
-        app:itemTextAppearanceActive="@style/TextAppearance.GDSC_2324.BnvItemActive"
-        app:itemTextAppearanceInactive="@style/TextAppearance.GDSC_2324.BnvItemInactive"
+        app:itemIconTint="@drawable/sel_main_color_bnv_label"
         app:itemTextColor="@drawable/sel_main_color_bnv_label"
         app:labelVisibilityMode="labeled"
-        android:elevation="0dp"
+        android:elevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

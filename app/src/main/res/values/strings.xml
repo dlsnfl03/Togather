@@ -2,4 +2,41 @@
     <string name="app_name">gdsc_2324_android</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--app name-->
+    <string name="title">HAPPY</string>
+
+    <!--start-->
+    <string name="start_kakao">카카오로 시작하기</string>
+    <string name="start_google">구글로 시작하기</string>
+    <string name="start_login">로그인</string>
+    <string name="start_signup">회원가입</string>
+
+    <!--sign up-->
+    <string name="sign_up_email_tv_appbar">회원가입</string>
+    <string name="sign_up_email_tv_name">이름</string>
+    <string name="sign_up_email_edt_name_hint">이름을 입력해 주세요</string>
+    <string name="sign_up_email_tv_email">이메일</string>
+    <string name="sign_up_email_edt_email_hint">이메일을 입력해 주세요</string>
+    <string name="sign_up_email_tv_email_error">이메일을 형식에 맞춰서 입력해주세요</string>
+    <string name="sign_up_email_tv_checkcode">확인코드 입력</string>
+    <string name="sign_up_email_edt_checkcode_hint">확인코드를 입력해주세요</string>
+    <string name="sign_up_email_tv_checkcode_error">확인코드가 일치하지 않습니다.</string>
+    <string name="sign_up_email_tv_checkcode_time">02:30</string>
+    <string name="sign_up_email_btn_check">확인</string>
+    <string name="sign_up_email_btn_next">다음</string>
+    <string name="sign_up_email_btn_next_error">확인코드 인증이 안되었습니다.</string>
+
+    <!--login-->
+    <string name="login_tv_appbar">로그인</string>
+    <string name="login_edt_email_hint">이메일</string>
+    <string name="login_edt_pw_hint">비밀번호</string>
+    <string name="login_btn_login">로그인</string>
+    <string name="login_tv_find_pw">비밀번호 찾기</string>
+    <string name="login_tv_signup">회원가입</string>
+    <string name="login_tv_kakao">카카오로 로그인하기</string>
+    <string name="login_tv_google">구글로 시작하기</string>
+
+
+
 </resources>

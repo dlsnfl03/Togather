@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Gdsc_2324_android" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Gdsc_2324_android" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Status bar 투명하게 구현 -->
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
