@@ -1,10 +1,15 @@
-package com.example.gdsc_2324_android
+package com.example.gdsc_2324_android.Home
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import com.example.gdsc_2324_android.R
 import com.example.gdsc_2324_android.databinding.ActivityBottomBinding
+import com.example.gdsc_2324_android.mapFragment
+import com.example.gdsc_2324_android.scrapFragment
+import com.example.gdsc_2324_android.settingFragment
+import com.example.gdsc_2324_android.writeFragment
 
 
 private const val TAG_WRITE = "write_fragment"

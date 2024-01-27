@@ -4,26 +4,31 @@
     <item
         android:id="@+id/writeFragment"
         android:title="게시글쓰기"
-        android:icon="@drawable/write"/>
+        android:icon="@drawable/icon_write"
+        android:checked="false" />
 
     <item
         android:id="@+id/mapFragment"
         android:title="지도"
-        android:icon="@drawable/map"/>
+        android:icon="@drawable/icon_map"
+        android:checked="false"/>
 
     <item
         android:id="@+id/homeFragment"
         android:title="홈"
-        android:icon="@drawable/home"/>
+        android:icon="@drawable/icon_home"
+        android:checked="true"/>
 
     <item
         android:id="@+id/scrapFragment"
         android:title="스크랩"
-        android:icon="@drawable/star"/>
+        android:icon="@drawable/icon_star"
+        android:checked="false"/>
 
     <item
         android:id="@+id/settingFragment"
         android:title="설정"
-        android:icon="@drawable/setting"/>
+        android:icon="@drawable/icon_setting"
+        android:checked="false"/>
 
 </menu>

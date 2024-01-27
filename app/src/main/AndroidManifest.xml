@@ -37,13 +37,28 @@
             android:value="YOUR_API_KEY" />
 
         <activity
-            android:name=".HomeActivity"
+            android:name=".FindPw.NewPwActivity"
             android:exported="false" />
         <activity
-            android:name=".bottomActivity"
+            android:name=".FindPw.FindPwActivity"
             android:exported="false" />
         <activity
-            android:name=".StartActivity"
+            android:name=".Login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp.SignUpEmailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WriteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Home.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Home.bottomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp.StartActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
@@ -54,6 +69,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

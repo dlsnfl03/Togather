@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".bottomActivity">
+    tools:context=".Home.bottomActivity">
 
     <FrameLayout
         android:id="@+id/mainFrameLayout"
@@ -21,7 +21,7 @@
         app:itemIconTint="@drawable/menu_click_color"
         app:itemTextColor="@drawable/menu_click_color"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/menu_home"
+        app:menu="@menu/menu_home_bnv"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
