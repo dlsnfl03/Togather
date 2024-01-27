@@ -37,6 +37,32 @@
     <string name="login_tv_kakao">카카오로 로그인하기</string>
     <string name="login_tv_google">구글로 시작하기</string>
 
+    <!--find pw-->
+    <string name="findpw_tv_toolbar">비밀번호 찾기</string>
+    <string name="findpw_tv_email">이메일</string>
+    <string name="findpw_edt_email_hint">이메일을 입력해 주세요</string>
+    <string name="findpw_tv_email_error">이메일 형식에 맞게 입력해주세요</string>
+    <string name="findpw_btn_check">확인</string>
+    <string name="findpw_tv_checkcode">확인코드</string>
+    <string name="findpw_edt_checkcode_hint">확인코드를 입력해주세요</string>
+    <string name="findpw_btn_checkcode">확인</string>
+    <string name="findpw_tv_checkcode_time">02:30</string>
 
+    <!--new pw-->
+    <string name="newpw_tv_toolbar">새 비밀번호 변경</string>
+    <string name="newpw_tv_makepw">새 비밀번호</string>
+    <string name="newpw_edt_makepw_hint">8~20자 영문, 숫자, 특수문자 포함</string>
+    <string name="newpw_tv_chkpw">새로운 비밀번호 확인</string>
+    <string name="newpw_edt_chkpw_hint">새 비밀번호 확인</string>
+    <string name="newpw_tv_chkpw_error">비밀번호가 일치하지 않습니다</string>
+    <string name="newpw_tv_chkpw_ok">비밀번호가 일치합니다</string>
+    <string name="newpw_btn_ok">확인</string>
+
+    <!--write-->
+    <string name="write_tv_toolbar">글쓰기</string>
+    <string name="write_tv_title">제목</string>
+    <string name="write_tv_content">내용을 입력하세요</string>
+    <string name="write_chkbox_writer">익명/소속</string>
+    <string name="write_btn_register">등록</string>
 
 </resources>

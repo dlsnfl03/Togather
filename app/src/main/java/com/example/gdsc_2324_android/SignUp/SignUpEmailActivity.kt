@@ -1,4 +1,4 @@
-package com.example.gdsc_2324_android
+package com.example.gdsc_2324_android.SignUp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
