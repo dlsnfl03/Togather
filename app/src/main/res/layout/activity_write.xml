@@ -34,15 +34,6 @@
         </TextView>
     </androidx.appcompat.widget.Toolbar>
 
-    <!--언더라인-->
-    <View
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        android:background="@color/toolbar_underline"
-        android:layout_gravity="bottom" />
 
     <Spinner
         android:id="@+id/spn_category"
@@ -121,15 +112,28 @@
 
     <CheckBox
         android:id="@+id/ckdTv_writer"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_writer"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:button="@null"
+        android:background="@drawable/sel_write_chkbox"
+        android:backgroundTint="@color/red"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/tv_writer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        android:layout_marginBottom="6dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center"
-        android:checked="true"
         android:text="@string/write_chkbox_writer"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
         android:textColor="@color/red"
         android:textStyle="bold" />
 
@@ -147,7 +151,8 @@
         android:text="@string/write_btn_register"
         android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
         android:textColor="@color/black"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
