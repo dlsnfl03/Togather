@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--스피너 카테고리-->
+    <string-array name="array_category">
+        <item>취업</item>
+        <item>기관/기업</item>
+        <item>정보</item>
+        <item>자유</item>
+        <item>중고장터</item>
+        <item>홍보</item>
+        <item>질문</item>
+        <item>게시판 선택</item>  <!--hint-->
+    </string-array>
+</resources>

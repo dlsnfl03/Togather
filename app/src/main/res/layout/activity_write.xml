@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WriteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back_arrow"
+            android:paddingVertical="20dp"
+            android:paddingStart="10dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/write_tv_toolbar"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head"
+            android:gravity="center"
+            android:layout_gravity="center">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--언더라인-->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:background="@color/toolbar_underline"
+        android:layout_gravity="bottom" />
+
+    <Spinner
+        android:id="@+id/spn_category"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:spinnerMode="dialog" />
+
+    <!--언더라인-->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_category"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/toolbar_underline"
+        android:layout_gravity="bottom" />
+
+    <EditText
+        android:id="@+id/edt_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spn_category"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:inputType="textPersonName"
+        android:hint="@string/write_tv_title"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Head"
+        android:textSize="26dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_title"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/toolbar_underline"
+        android:layout_gravity="bottom" />
+
+    <EditText
+        android:id="@+id/edt_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:gravity="top"
+        android:hint="@string/write_tv_content"
+        android:lineSpacingMultiplier="1.8"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edt_title"
+        app:layout_constraintStart_toStartOf="@+id/edt_title"
+        app:layout_constraintTop_toBottomOf="@+id/edt_title" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/icon_add_photo"/>
+
+    <CheckBox
+        android:id="@+id/ckdTv_writer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_register"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:checked="true"
+        android:text="@string/write_chkbox_writer"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/style_write_registerbtn"
+        android:text="@string/write_btn_register"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
