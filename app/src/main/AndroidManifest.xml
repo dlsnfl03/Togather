@@ -37,6 +37,9 @@
             android:value="YOUR_API_KEY" />
 
         <activity
+            android:name=".Home.PopularMoreActivity"
+            android:exported="false" />
+        <activity
             android:name=".FindPw.NewPwActivity"
             android:exported="false" />
         <activity

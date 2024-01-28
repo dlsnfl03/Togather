@@ -34,32 +34,16 @@
         </TextView>
     </androidx.appcompat.widget.Toolbar>
 
-    <!--언더라인-->
-    <View
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        android:background="@color/toolbar_underline"
-        android:layout_gravity="bottom" />
-
-
-    <com.example.gdsc_2324_android.OutLineTextView
+    <TextView
         android:id="@+id/tv_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="261dp"
+        android:layout_height="83dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         android:layout_marginTop="100dp"
-        android:text="@string/title"
-        android:fontFamily="@font/oleo_script"
-        android:textColor="@color/main_org"
-        android:textSize="40sp"
-        android:gravity="center"
-        app:textStrokeColor="@android:color/black"
-        app:textStrokeWidth="2" />
+        android:layout_marginStart="40dp"
+        android:background="@drawable/img_app_name_512w" />
 
     <!--이메일-->
     <EditText
@@ -69,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@id/tv_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="60dp"
         android:layout_marginHorizontal="25dp"
         android:background="@drawable/style_login_edt_bg"
         android:hint="@string/login_edt_email_hint"
