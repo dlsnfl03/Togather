@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="Widget.GDSC_2324_BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/main_org</item>
+        <item name="android:color">@android:color/transparent</item>
+        <item name="android:textColor">@color/gray_GR2</item>
     </style>
 </resources>

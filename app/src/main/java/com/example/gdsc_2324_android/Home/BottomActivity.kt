@@ -18,7 +18,7 @@ private const val TAG_HOME = "home_fragment"
 private const val TAG_SCARP = "scarp_fragment"
 private const val TAG_SETTING = "setting_fragment"
 
-class bottomActivity : AppCompatActivity() {
+class BottomActivity : AppCompatActivity() {
     private lateinit var binding : ActivityBottomBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,12 +26,12 @@ class bottomActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        setFragment(TAG_HOME, homeFragment())
+        setFragment(TAG_HOME, HomeFragment())
 
         binding.navigationView.setOnItemSelectedListener { item ->
             when(item.itemId) {
                 R.id.writeFragment -> setFragment(TAG_WRITE, writeFragment())
-                R.id.homeFragment -> setFragment(TAG_HOME, homeFragment())
+                R.id.homeFragment -> setFragment(TAG_HOME, HomeFragment())
                 R.id.mapFragment-> setFragment(TAG_MAP, mapFragment())
                 R.id.scrapFragment-> setFragment(TAG_SCARP, scrapFragment())
                 R.id.settingFragment-> setFragment(TAG_SETTING, settingFragment())

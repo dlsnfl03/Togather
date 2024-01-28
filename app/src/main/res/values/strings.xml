@@ -65,4 +65,32 @@
     <string name="write_chkbox_writer">익명/소속</string>
     <string name="write_btn_register">등록</string>
 
+    <!--home-->
+    <string name="home_hsv_all">전체</string>
+    <string name="home_hsv_job">취업</string>
+    <string name="home_hsv_institution">기업/기관</string>
+    <string name="home_hsv_info">정보</string>
+    <string name="home_hsv_free">자유</string>
+    <string name="home_hsv_deals">중고장터</string>
+    <string name="home_hsv_promotion">홍보</string>
+    <string name="home_hsv_question">질문</string>
+    <string name="home_tv_realtime_popularity">실시간 인기글</string>
+    <string name="home_tv_job_notice">취업 공고</string>
+    <string name="home_tv_event_news">행사소식</string>
+    <string name="home_tv_policy_news">정책소식</string>
+    <string name="home_tv_sales">판매 중</string>
+
+    <!--item realtime popularity-->
+    <string name="home_rv_realtime_title">[SK] 장애 근로자 채용</string>
+    <string name="home_rv_realtime_content">SK 매직에서 장애 근로자를 채용합니다\nSK 매직과 일할 근로자 분은 아래의 지원서를 작성해주시기 바랍니다.</string>
+    <string name="home_rv_realtime_writer">SK매직</string>
+    <string name="home_rv_realtime_date">2024/01/12</string>
+    <string name="home_rv_realtime_time">02:30</string>
+    <string name="home_rv_realtime_like">0</string>
+    <string name="home_rv_realtime_comment">2</string>
+
+    <!--more popular-->
+    <string name="more_popular_toolbar">실시간 인기글</string>
+
+
 </resources>

@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="main_org">#FFBB00</color>
+    <color name="sub_org">#FFDF87</color>
     <color name="home_point">#F5F6F1</color>
 
     <color name="gray_GR1">#515151</color>
