@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FindPw.FindPwActivity">
+    tools:context=".FindPw.NewPwActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -27,11 +27,12 @@
             android:id="@+id/txt_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/findpw_tv_toolbar"
-            android:textAppearance="@style/TextAppearance.GDSC_2324.Head"
+            android:layout_gravity="center"
             android:gravity="center"
-            android:layout_gravity="center">
-        </TextView>
+            android:text="비밀번호 찾기"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="20dp"></TextView>
     </androidx.appcompat.widget.Toolbar>
 
     <!--언더라인-->
@@ -44,12 +45,58 @@
         android:background="@color/toolbar_underline"
         android:layout_gravity="bottom" />
 
-    <androidx.viewpager2.widget.ViewPager2
+
+    <EditText
+        android:id="@+id/edt_chkpw"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="36dp"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/style_newpw_edt_bg"
+        android:hint="이메일을 입력해 주세요"
+        android:inputType="textPassword"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_chkpw" />
+
+    <TextView
+        android:id="@+id/tv_chkpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="이메일"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <TextView
+        android:id="@+id/tv_email_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="이메일 형식에 맞춰서 입력해주세요"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.SubError"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edt_chkpw" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_next"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/style_newpw_chkbtn"
+        android:text="@string/newpw_btn_ok"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
+        android:textColor="@color/white"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
