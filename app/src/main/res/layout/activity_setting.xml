@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting.SettingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back_arrow"
+            android:paddingVertical="20dp"
+            android:paddingStart="10dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setting_toolbar"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head"
+            android:gravity="center"
+            android:layout_gravity="center">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/img_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:src="@drawable/icon_person"
+        android:background="@drawable/style_setting_person_bg"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/img_person"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/setting_tv_name"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Head"/>
+
+    <TextView
+        android:id="@+id/tv_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_name"
+        app:layout_constraintTop_toTopOf="@id/tv_name"
+        app:layout_constraintBottom_toBottomOf="@id/tv_name"
+        android:layout_marginStart="15dp"
+        android:text="@string/setting_tv_group"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
+        android:background="@drawable/style_setting_group_bg"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="3dp"/>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintBottom_toBottomOf="@id/img_person"
+        app:layout_constraintStart_toEndOf="@id/img_person"
+        android:layout_marginStart="25dp"
+        android:text="@string/setting_tv_email"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_person"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_group_change"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:text="@string/setting_tv_group_change"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head" />
+        <TextView
+            android:id="@+id/tv_name_change"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:text="@string/setting_tv_name_change"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head" />
+        <TextView
+            android:id="@+id/tv_pw_change"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:text="@string/setting_tv_pw_change"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head" />
+        <TextView
+            android:id="@+id/tv_myposts"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:text="@string/setting_tv_myposts"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head" />
+        <TextView
+            android:id="@+id/tv_group_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="15dp"
+            android:text="@string/setting_tv_logout"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head" />
+        <TextView
+            android:id="@+id/tv_group_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/setting_tv_withdraw"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -98,6 +98,19 @@
     <!--scrap-->
     <string name="scrap_toolbar">스크랩</string>
 
+    <!--setting-->
+    <string name="setting_toolbar">설정</string>
+    <string name="setting_tv_name">이름</string>
+    <string name="setting_tv_group">소속</string>
+    <string name="setting_tv_email">abc000@gmail.com</string>
+    <string name="setting_tv_group_change">소속 변경</string>
+    <string name="setting_tv_name_change">이름 변경</string>
+    <string name="setting_tv_pw_change">비밀번호 변경</string>
+    <string name="setting_tv_myposts">내가 작성한 글 보기</string>
+    <string name="setting_tv_logout">로그아웃</string>
+    <string name="setting_tv_withdraw">회원 탈퇴</string>
+
+
 
 
 </resources>
