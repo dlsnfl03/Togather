@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.gdsc_2324_android.Home.data.PopularPostItem
 import com.example.gdsc_2324_android.databinding.ItemHomePopularPostBinding
 
-
 class PopularPostAdapter(private val posts: List<PopularPostItem>) : RecyclerView.Adapter<PopularPostAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
