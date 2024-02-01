@@ -37,11 +37,25 @@
             android:value="YOUR_API_KEY" />
 
         <activity
+            android:name=".Setting.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Scrap.ScrapActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBIUi4Y_x3vbHaJfmcGZ2Bjcn5Vs5tRhEM" />
+
+        <activity
+            android:name=".MapActivity"
+            android:exported="true" />
+        <activity
             android:name=".Home.PopularMoreActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".FindPw.NewPwActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".FindPw.FindPwActivity"
             android:exported="false" />
@@ -58,7 +72,7 @@
             android:name=".Home.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".Home.bottomActivity"
+            android:name=".Home.BottomActivity"
             android:exported="true" />
         <activity
             android:name=".SignUp.StartActivity"

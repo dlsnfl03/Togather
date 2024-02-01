@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginVertical="5dp">
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="취업"
+        android:textColor="@color/main_org"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_category"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/home_rv_realtime_title"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Head" />
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/home_rv_realtime_content"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle02" />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="10dp"
+        android:text="@string/home_rv_realtime_time"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle02" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="10dp"
+        android:text="@string/home_rv_realtime_date"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle02" />
+
+    <TextView
+        android:id="@+id/tv_chat_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/home_rv_realtime_comment"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle02" />
+    <ImageView
+        android:id="@+id/img_chat"
+        android:layout_width="16dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/tv_chat_num"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_chat_num"
+        app:layout_constraintEnd_toStartOf="@+id/tv_chat_num"
+        android:layout_marginEnd="3dp"
+        android:src="@drawable/icon_chat_bubble" />
+
+    <TextView
+        android:id="@+id/tv_like_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_chat"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/home_rv_realtime_like"
+        android:textColor="@color/red"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle02" />
+    <ImageView
+        android:id="@+id/img_like"
+        android:layout_width="16dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@+id/tv_like_num"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_like_num"
+        app:layout_constraintEnd_toStartOf="@+id/tv_like_num"
+        android:layout_marginEnd="3dp"
+        android:background="@drawable/icon_like"
+        android:backgroundTint="@color/red"/>
+
+    <!--언더라인-->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date"
+        android:layout_marginTop="20dp"
+        android:background="@color/toolbar_underline"
+        android:layout_gravity="bottom" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
