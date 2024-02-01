@@ -92,5 +92,8 @@
     <!--more popular-->
     <string name="more_popular_toolbar">실시간 인기글</string>
 
+    <!--map-->
+    <string name="map_toolbar">주변시설 알아보기</string>
+
 
 </resources>
