@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">gdsc_2324_android</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--app name-->
+    <string name="title">HAPPY</string>
+
+    <!--start-->
+    <string name="start_kakao">카카오로 시작하기</string>
+    <string name="start_google">구글로 시작하기</string>
+    <string name="start_login">로그인</string>
+    <string name="start_signup">회원가입</string>
+
+    <!--sign up-->
+    <string name="sign_up_email_tv_appbar">회원가입</string>
+    <string name="sign_up_email_tv_name">이름</string>
+    <string name="sign_up_email_edt_name_hint">이름을 입력해 주세요</string>
+    <string name="sign_up_email_tv_email">이메일</string>
+    <string name="sign_up_email_edt_email_hint">이메일을 입력해 주세요</string>
+    <string name="sign_up_email_tv_email_error">이메일을 형식에 맞춰서 입력해주세요</string>
+    <string name="sign_up_email_tv_checkcode">확인코드 입력</string>
+    <string name="sign_up_email_edt_checkcode_hint">확인코드를 입력해주세요</string>
+    <string name="sign_up_email_tv_checkcode_error">확인코드가 일치하지 않습니다.</string>
+    <string name="sign_up_email_tv_checkcode_time">02:30</string>
+    <string name="sign_up_email_btn_check">확인</string>
+    <string name="sign_up_email_btn_next">다음</string>
+    <string name="sign_up_email_btn_next_error">확인코드 인증이 안되었습니다.</string>
+
+    <!--login-->
+    <string name="login_tv_appbar">로그인</string>
+    <string name="login_edt_email_hint">이메일</string>
+    <string name="login_edt_pw_hint">비밀번호</string>
+    <string name="login_btn_login">로그인</string>
+    <string name="login_tv_find_pw">비밀번호 찾기</string>
+    <string name="login_tv_signup">회원가입</string>
+    <string name="login_tv_kakao">카카오로 로그인하기</string>
+    <string name="login_tv_google">구글로 시작하기</string>
+
+    <!--find pw-->
+    <string name="findpw_tv_toolbar">비밀번호 찾기</string>
+    <string name="findpw_tv_email">이메일</string>
+    <string name="findpw_edt_email_hint">이메일을 입력해 주세요</string>
+    <string name="findpw_tv_email_error">이메일 형식에 맞게 입력해주세요</string>
+    <string name="findpw_btn_check">확인</string>
+    <string name="findpw_tv_checkcode">확인코드</string>
+    <string name="findpw_edt_checkcode_hint">확인코드를 입력해주세요</string>
+    <string name="findpw_btn_checkcode">확인</string>
+    <string name="findpw_tv_checkcode_time">02:30</string>
+
+    <!--new pw-->
+    <string name="newpw_tv_toolbar">새 비밀번호 변경</string>
+    <string name="newpw_tv_makepw">새 비밀번호</string>
+    <string name="newpw_edt_makepw_hint">8~20자 영문, 숫자, 특수문자 포함</string>
+    <string name="newpw_tv_chkpw">새로운 비밀번호 확인</string>
+    <string name="newpw_edt_chkpw_hint">새 비밀번호 확인</string>
+    <string name="newpw_tv_chkpw_error">비밀번호가 일치하지 않습니다</string>
+    <string name="newpw_tv_chkpw_ok">비밀번호가 일치합니다</string>
+    <string name="newpw_btn_ok">확인</string>
+
+    <!--write-->
+    <string name="write_tv_toolbar">글쓰기</string>
+    <string name="write_tv_title">제목</string>
+    <string name="write_tv_content">내용을 입력하세요</string>
+    <string name="write_chkbox_writer">익명/소속</string>
+    <string name="write_btn_register">등록</string>
+
+    <!--home-->
+    <string name="home_hsv_all">전체</string>
+    <string name="home_hsv_job">취업</string>
+    <string name="home_hsv_institution">기업/기관</string>
+    <string name="home_hsv_info">정보</string>
+    <string name="home_hsv_free">자유</string>
+    <string name="home_hsv_deals">중고장터</string>
+    <string name="home_hsv_promotion">홍보</string>
+    <string name="home_hsv_question">질문</string>
+    <string name="home_tv_realtime_popularity">실시간 인기글</string>
+    <string name="home_tv_job_notice">취업 공고</string>
+    <string name="home_tv_event_news">행사소식</string>
+    <string name="home_tv_policy_news">정책소식</string>
+    <string name="home_tv_sales">판매 중</string>
+
+    <!--item realtime popularity-->
+    <string name="home_rv_realtime_title">[SK] 장애 근로자 채용</string>
+    <string name="home_rv_realtime_content">SK 매직에서 장애 근로자를 채용합니다\nSK 매직과 일할 근로자 분은 아래의 지원서를 작성해주시기 바랍니다.</string>
+    <string name="home_rv_realtime_writer">SK매직</string>
+    <string name="home_rv_realtime_date">2024/01/12</string>
+    <string name="home_rv_realtime_time">02:30</string>
+    <string name="home_rv_realtime_like">0</string>
+    <string name="home_rv_realtime_comment">2</string>
+
+    <!--more popular-->
+    <string name="more_popular_toolbar">실시간 인기글</string>
+
+    <!--map-->
+    <string name="map_toolbar">주변시설 알아보기</string>
+
+    <!--scrap-->
+    <string name="scrap_toolbar">스크랩</string>
+
+    <!--setting-->
+    <string name="setting_toolbar">설정</string>
+    <string name="setting_tv_name">이름</string>
+    <string name="setting_tv_group">소속</string>
+    <string name="setting_tv_email">abc000@gmail.com</string>
+    <string name="setting_tv_group_change">소속 변경</string>
+    <string name="setting_tv_name_change">이름 변경</string>
+    <string name="setting_tv_pw_change">비밀번호 변경</string>
+    <string name="setting_tv_myposts">내가 작성한 글 보기</string>
+    <string name="setting_tv_logout">로그아웃</string>
+    <string name="setting_tv_withdraw">회원 탈퇴</string>
+
+
+</resources>

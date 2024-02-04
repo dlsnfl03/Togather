@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gdsc_2324_android"
+        tools:targetApi="31">
+        <activity
+            android:name=".setgroup"
+            android:exported="false" />
+        <activity
+            android:name=".point"
+            android:exported="false" />
+        <activity
+            android:name=".Setting.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Scrap.ScrapActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBIUi4Y_x3vbHaJfmcGZ2Bjcn5Vs5tRhEM" />
+
+        <activity
+            android:name=".MapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Home.PopularMoreActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FindPw.NewPwActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FindPw.FindPwActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp.SignUpEmailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WriteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Home.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Home.BottomActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp.StartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

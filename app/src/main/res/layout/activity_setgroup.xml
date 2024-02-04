@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back_arrow"
+            android:paddingVertical="20dp"
+            android:paddingStart="10dp" />
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="소속 설정"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head"
+            android:gravity="center"
+            android:layout_gravity="center" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/style_newpw_chkbtn"
+            android:text="@string/newpw_btn_ok"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal">
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="149dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:text="현재 소속 :"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="78dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="149dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:text="소속 변경하기"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="63dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="388dp"
+            android:text="기관 :"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/editTextText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            app:layout_constraintVertical_bias="0.971" />
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="122dp"
+            android:layout_marginBottom="381dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="SK"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="101dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:checked="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="장애인"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="248dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="101dp"
+            android:layout_height="41dp"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="비장애인"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.441"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="248dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="101dp"
+            android:layout_height="41dp"
+            android:background="@drawable/selector_radio_button"
+            android:button="@null"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="기관 / 기업"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            tools:layout_editor_absoluteX="261dp"
+            tools:layout_editor_absoluteY="248dp" />
+
+        <Button
+            android:id="@+id/btnDisplaySelected"
+            android:layout_width="101dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="164dp"
+            android:background="@drawable/selector_radio_button"
+            android:button="@drawable/point_btn"
+            android:checked="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="장애인"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="78dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
