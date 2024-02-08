@@ -58,4 +58,12 @@ dependencies {
     //google map
     implementation("com.google.android.gms:play-services-maps:18.2.0")
     implementation("com.google.android.gms:play-services-location:21.1.0")
+
+    // Google Play services
+    implementation ("com.google.gms:google-services:4.3.15")
+    implementation ("com.google.firebase:firebase-auth:22.3.1")
+    implementation ("com.google.firebase:firebase-bom:32.7.1")
+    implementation ("com.google.android.gms:play-services-auth:20.7.0")
+
+
 }
