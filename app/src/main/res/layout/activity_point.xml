@@ -49,21 +49,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:srcCompat="@drawable/point"
-            tools:layout_editor_absoluteY="93dp" />
-
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_point"
             android:layout_width="79dp"
             android:layout_height="39dp"
             android:layout_marginHorizontal="25dp"
-            android:layout_marginTop="26dp"
             android:layout_marginBottom="492dp"
             android:background="@drawable/point_btn"
             android:text="적립"
@@ -72,8 +62,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.048"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_point3"
@@ -88,6 +77,20 @@
             app:layout_constraintHorizontal_bias="0.403"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="200dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next5"
+            android:layout_width="312dp"
+            android:layout_height="73dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginStart="28dp"
+            android:background="@drawable/style_newpw_chkbtn"
+            android:text="내 포인트 :"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="93dp" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
