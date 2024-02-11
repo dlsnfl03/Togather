@@ -33,16 +33,6 @@
             android:layout_gravity="center">
         </TextView>
     </androidx.appcompat.widget.Toolbar>
-
-    <!--언더라인-->
-    <View
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        android:background="@color/toolbar_underline"
-        android:layout_gravity="bottom" />
     
     <TextView
         android:id="@+id/tv_name"
