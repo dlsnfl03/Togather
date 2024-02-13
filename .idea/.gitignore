@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/androidstudio,android,java,macos,kotlin
-# Edit at https://www.toptal.com/developers/gitignore?templates=androidstudio,android,java,macos,kotlin
+# Created by https://www.toptal.com/developers/gitignore/api/kotlin,androidstudio,android
+# Edit at https://www.toptal.com/developers/gitignore?templates=kotlin,androidstudio,android
 
 ### Android ###
 # Gradle files
@@ -22,9 +22,6 @@ output.json
 # IntelliJ
 *.iml
 .idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
 
 # Keystore files
 *.jks
@@ -42,7 +39,7 @@ gen-external-apklibs
 # Replacement of .externalNativeBuild directories introduced
 # with Android Studio 3.5.
 
-### Java ###
+### Kotlin ###
 # Compiled class file
 *.class
 
@@ -66,52 +63,6 @@ gen-external-apklibs
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
-
-### Kotlin ###
-# Compiled class file
-
-# Log file
-
-# BlueJ files
-
-# Mobile Tools for Java (J2ME)
-
-# Package Files #
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-
-### macOS ###
-# General
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Icon must end with two \r
-Icon
-
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-### macOS Patch ###
-# iCloud generated files
-*.icloud
 
 ### AndroidStudio ###
 # Covers files to be ignored for android development using Android Studio.
@@ -230,4 +181,4 @@ fabric.properties
 
 !/gradle/wrapper/gradle-wrapper.jar
 
-# End of https://www.toptal.com/developers/gitignore/api/androidstudio,android,java,macos,kotlin
+# End of https://www.toptal.com/developers/gitignore/api/kotlin,androidstudio,android
