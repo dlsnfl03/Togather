@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "819249599026",
+    "project_id": "togather-413009",
+    "storage_bucket": "togather-413009.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819249599026:android:02cb75b949ca2ecbec222b",
+        "android_client_info": {
+          "package_name": "com.example.gdsc_2324_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "819249599026-7ms2p2q0usqh3np8b9n2hscgpjgmheic.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gdsc_2324_android",
+            "certificate_hash": "2ef0ac5b0712b0a0f66236e6e979361bf07ad3b2"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQ9ugs37-rz6-NWOAl7uvFATX5zKniM5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
