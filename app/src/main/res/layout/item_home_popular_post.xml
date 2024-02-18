@@ -8,7 +8,7 @@
     android:layout_marginVertical="5dp">
 
     <TextView
-        android:id="@+id/tv_title"
+        android:id="@+id/tv_bdtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,22 +18,22 @@
         android:text="@string/home_rv_realtime_title"
         android:textAppearance="@style/TextAppearance.GDSC_2324.Head" />
     <TextView
-        android:id="@+id/tv_content"
+        android:id="@+id/tv_bdcontent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bdtitle"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:text="@string/home_rv_realtime_content"
         android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle02" />
 
     <TextView
-        android:id="@+id/tv_writer"
+        android:id="@+id/tv_bdtime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bdcontent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginStart="10dp"
         android:layout_marginVertical="10dp"
