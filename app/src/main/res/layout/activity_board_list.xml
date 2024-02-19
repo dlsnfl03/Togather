@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.LoginActivity">
+
+    <RadioButton
+        android:id="@+id/radioButton6"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:background="@drawable/selector_radio_button"
+        android:button="@null"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="기타"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/selector_radio_button"
+        android:button="@null"
+        android:checked="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="취업공고"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:background="@drawable/selector_radio_button"
+        android:button="@null"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:text="연구 실험"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="74dp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/btn_re_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_back_arrow"
+            android:paddingVertical="20dp"
+            android:paddingStart="10dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취업"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Head"
+            android:gravity="center"
+            android:layout_gravity="center">
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/boardre"
+        android:layout_width="409dp"
+        android:layout_height="614dp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <!--이메일-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
