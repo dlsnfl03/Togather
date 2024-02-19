@@ -5,5 +5,4 @@ data class boarditem (
     val bdcontent: String,
     val bdwriter: String,
     val bdtime: String,
-
     )
