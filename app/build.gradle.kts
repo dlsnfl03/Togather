@@ -75,6 +75,7 @@ dependencies {
     implementation("com.google.android.gms:play-services-maps:18.2.0")
     implementation("com.google.android.gms:play-services-location:21.1.0")
 
+
     // Google Play services
     implementation ("com.google.gms:google-services:4.3.15")
     implementation ("com.google.firebase:firebase-auth:22.3.1")
@@ -84,6 +85,10 @@ dependencies {
     //firebase BoM
     implementation(platform("com.google.firebase:firebase-bom:32.7.2"))
     implementation("com.google.firebase:firebase-analytics")
+
+    // retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0") // 레트로핏 설치 (필수)
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0") // 컨버터
 
 
 }

@@ -2,33 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/writeFragment"
+        android:id="@+id/navigation_write"
         android:title="게시글쓰기"
-        android:icon="@drawable/icon_write"
-        android:checked="false" />
+        android:icon="@drawable/icon_write" />
 
     <item
-        android:id="@+id/mapFragment"
+        android:id="@+id/navigation_map"
         android:title="지도"
-        android:icon="@drawable/icon_map"
-        android:checked="false"/>
+        android:icon="@drawable/icon_map" />
 
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/navigation_home"
         android:title="홈"
-        android:icon="@drawable/icon_home"
-        android:checked="true"/>
+        android:icon="@drawable/icon_home" />
 
     <item
-        android:id="@+id/scrapFragment"
+        android:id="@+id/navigation_scrap"
         android:title="스크랩"
-        android:icon="@drawable/icon_star"
-        android:checked="false"/>
+        android:icon="@drawable/icon_star" />
 
     <item
-        android:id="@+id/settingFragment"
+        android:id="@+id/navigation_settings"
         android:title="설정"
-        android:icon="@drawable/icon_setting"
-        android:checked="false"/>
+        android:icon="@drawable/icon_setting" />
 
 </menu>

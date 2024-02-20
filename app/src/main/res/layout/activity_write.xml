@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WriteActivity">
+    tools:context=".Write.WriteActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -74,6 +74,7 @@
         android:textSize="26dp" />
 
     <View
+        android:id="@+id/view_line"
         android:layout_width="0dp"
         android:layout_height="1dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,75 +85,112 @@
         android:background="@color/toolbar_underline"
         android:layout_gravity="bottom" />
 
-    <EditText
-        android:id="@+id/edt_content"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="26dp"
-        android:ems="10"
-        android:inputType="textMultiLine"
-        android:gravity="top"
-        android:hint="@string/write_tv_content"
-        android:lineSpacingMultiplier="1.8"
-        android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/layout_bottom"
         app:layout_constraintEnd_toEndOf="@+id/edt_title"
         app:layout_constraintStart_toStartOf="@+id/edt_title"
-        app:layout_constraintTop_toBottomOf="@+id/edt_title" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn_register"
-        android:layout_marginStart="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/view_line"
         android:layout_marginBottom="5dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/icon_add_photo"/>
+        android:orientation="vertical">
 
-    <CheckBox
-        android:id="@+id/ckdTv_writer"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/tv_writer"
-        app:layout_constraintBottom_toTopOf="@+id/btn_register"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center"
-        android:button="@null"
-        android:background="@drawable/sel_write_chkbox"
-        android:backgroundTint="@color/red"
-        android:checked="true" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_writer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/btn_register"
-        android:layout_marginBottom="6dp"
-        android:layout_marginEnd="30dp"
-        android:text="@string/write_chkbox_writer"
-        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
-        android:textColor="@color/red"
-        android:textStyle="bold" />
+            <EditText
+                android:id="@+id/edt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:hint="@string/write_tv_content"
+                android:lineSpacingMultiplier="1.8"
+                android:background="@null" />
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_register"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_Images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_bottom"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginHorizontal="25dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/style_write_registerbtn"
-        android:text="@string/write_btn_register"
-        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
+        app:layout_constraintBottom_toBottomOf="parent">
 
+        <ImageButton
+            android:id="@+id/btn_attach_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_add_photo"/>
+
+        <CheckBox
+            android:id="@+id/ckdTv_writer"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_writer"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@drawable/sel_write_chkbox"
+            android:backgroundTint="@color/red"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/tv_writer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/btn_register"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="30dp"
+            android:text="@string/write_chkbox_writer"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/style_write_registerbtn"
+            android:text="@string/write_btn_register"
+            android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle01"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
