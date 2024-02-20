@@ -11,6 +11,7 @@ import com.example.gdsc_2324_android.R
 import com.example.gdsc_2324_android.Scrap.ScrapActivity
 import com.example.gdsc_2324_android.Setting.SettingActivity
 import com.example.gdsc_2324_android.Write.WriteActivity
+import com.example.gdsc_2324_android.alarm.AlarmActivity
 import com.example.gdsc_2324_android.databinding.ActivityHomeBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -66,6 +67,10 @@ class HomeActivity : AppCompatActivity() {
         // 더보기 클릭 시 이벤트
         binding.imgPopularMore.setOnClickListener {
             val intent = Intent(this, PopularMoreActivity::class.java)
+            startActivity(intent)
+        }
+        binding.imgNotification.setOnClickListener {
+            val intent = Intent(this, AlarmActivity::class.java)
             startActivity(intent)
         }
     }
