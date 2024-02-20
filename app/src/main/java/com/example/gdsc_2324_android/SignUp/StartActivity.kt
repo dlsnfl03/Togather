@@ -10,15 +10,18 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import com.example.gdsc_2324_android.Home.HomeActivity
 import com.example.gdsc_2324_android.Login.LoginActivity
-import com.example.gdsc_2324_android.R
+import com.example.gdsc_2324_android.data.LoginDTO
 import com.example.gdsc_2324_android.databinding.ActivityStartBinding
+import com.example.gdsc_2324_android.retrofit.RetrofitBuilder
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
-import com.google.android.gms.common.api.Scope
 import com.google.android.gms.tasks.Task
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 
 class StartActivity : AppCompatActivity() {
@@ -36,10 +39,11 @@ class StartActivity : AppCompatActivity() {
             Toast.makeText(this, "로그인 되었습니다", Toast.LENGTH_SHORT).show()
         } ?: Toast.makeText(this, "로그인 되지 않았습니다", Toast.LENGTH_SHORT).show()
 
-        /* 계정이 존재하면 자동으로 HomeActivity로 이동
+
+        // 계정이 존재하면 자동으로 HomeActivity로 이동
         if (account != null) {
             moveToHomeActivity()
-        }*/
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,7 +63,7 @@ class StartActivity : AppCompatActivity() {
 
         with(binding) {
             btnGoogle.setOnClickListener {
-                signIn()
+                googleLogin()
             }
             btnGoggleLogout.setOnClickListener {
                 signOut()
@@ -78,7 +82,7 @@ class StartActivity : AppCompatActivity() {
     }
 
 
-    private fun setResultSignUp() {
+    public fun setResultSignUp() {
         resultLauncher =
             registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
                 //정상적으로 결과가 받아와진다면 조건문 실행
@@ -90,7 +94,7 @@ class StartActivity : AppCompatActivity() {
             }
     }
 
-    private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
+    public fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
         try {
             val account = completedTask.getResult(ApiException::class.java)
             val email = account?.email.toString()
@@ -115,26 +119,28 @@ class StartActivity : AppCompatActivity() {
     }
 
 
-    private fun signIn() {
+    public fun googleLogin() {
         val signInIntent: Intent = mGoogleSignInClient.signInIntent
         resultLauncher.launch(signInIntent)
+
+
     }
 
-    private fun signOut() {
+    public fun signOut() {
         mGoogleSignInClient.signOut()
             .addOnCompleteListener(this) {
                 //...
             }
     }
 
-    private fun revokeAccess() {
+    public fun revokeAccess() {
         mGoogleSignInClient.revokeAccess()
             .addOnCompleteListener(this) {
 
             }
     }
 
-    private fun GetCurrentUserProfile() {
+    public fun GetCurrentUserProfile() {
         val curUser = GoogleSignIn.getLastSignedInAccount(this)
         curUser?.let {
             val email = curUser.email.toString()
@@ -168,5 +174,34 @@ class StartActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun signUp(email: String, username: String, password: String) {
+        val dataInfo = LoginDTO(
+            username = username,
+            password = password,
+            email = email,
+            userGroup = "DISABLED" // 새로운 사용자는 기본적으로 DISABLED 상태로 설정
+        )
+
+        RetrofitBuilder.loginApi.login(dataInfo).enqueue(object : Callback<Void> {
+            override fun onResponse(call: Call<Void>, response: Response<Void>) {
+                if (response.isSuccessful) {
+                    // 회원가입 성공
+                    Log.d("LoginTest", response.body().toString())
+                    Log.d("LoginTest", "연결성공")
+                    // 자동으로 로그인 시도
+                    //login(email, password)
+                } else {
+                    // 회원가입 실패
+                    // 에러 처리
+                    Log.d("LoginTest", "연결실패")
+                }
+            }
+
+            override fun onFailure(call: Call<Void>, t: Throwable) {
+                // 네트워크 오류 등의 실패 처리
+                Log.e("LoginTest", t.message.toString())
+            }
+        })
+    }
 
 }

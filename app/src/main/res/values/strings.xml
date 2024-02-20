@@ -26,6 +26,10 @@
     <string name="sign_up_email_btn_check">확인</string>
     <string name="sign_up_email_btn_next">다음</string>
     <string name="sign_up_email_btn_next_error">확인코드 인증이 안되었습니다.</string>
+    <string name="sign_up_email_tv_pw">비밀번호 설정</string>
+    <string name="sign_up_email_edt_pw_hint">비밀번호를 입력해주세요</string>
+    <string name="sign_up_email_tv_pw_check">비밀번호 확인</string>
+    <string name="sign_up_email_edt_pw_check">비밀번호를 다시 한번 더 입력해주세요</string>
 
     <!--login-->
     <string name="login_tv_appbar">로그인</string>
@@ -109,6 +113,9 @@
     <string name="setting_tv_myposts">내가 작성한 글 보기</string>
     <string name="setting_tv_logout">로그아웃</string>
     <string name="setting_tv_withdraw">회원 탈퇴</string>
+
+
+    <string name="default_web_client_id">819249599026-7ms2p2q0usqh3np8b9n2hscgpjgmheic.apps.googleusercontent.com</string>
 
 
 </resources>
