@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/style_alarm_item_bg"
+    android:backgroundTint="@color/sub_org"
+    android:layout_marginVertical="5dp">
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/alarm_category"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Head" />
+    <TextView
+        android:id="@+id/tv_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_category"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/alarm_explanation"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Head02" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tv_explain"
+        app:layout_constraintTop_toBottomOf="@+id/tv_category"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/alarm_comment"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Head02" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_explain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/alarm_date"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle02" />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/tv_explain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="3dp"
+        android:layout_marginVertical="10dp"
+        android:text="@string/alarm_time"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle02" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

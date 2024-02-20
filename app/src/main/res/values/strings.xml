@@ -115,6 +115,15 @@
     <string name="setting_tv_withdraw">회원 탈퇴</string>
 
 
+    <string name="alarm_toolbar">알림</string>
+    <string name="alarm_category">취업</string>
+    <string name="alarm_explanation">작성하신 글에 댓글이 달렸습니다 : </string>
+    <string name="alarm_comment">힘내세요!</string>
+    <string name="alarm_date">2024/01/11</string>
+    <string name="alarm_time">10:42</string>
+
+
+
     <string name="default_web_client_id">819249599026-7ms2p2q0usqh3np8b9n2hscgpjgmheic.apps.googleusercontent.com</string>
 
 
