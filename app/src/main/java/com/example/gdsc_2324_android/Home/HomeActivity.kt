@@ -1,8 +1,13 @@
 package com.example.gdsc_2324_android.Home
 
+import android.app.Dialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import android.widget.RadioButton
+import android.widget.RadioGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.gdsc_2324_android.Home.adapter.PopularPostAdapter
 import com.example.gdsc_2324_android.Home.data.PopularPostItem
@@ -59,7 +64,7 @@ class HomeActivity : AppCompatActivity() {
         // 가상의 데이터
         val popularPosts = getMockPopularPosts()
 
-        // RecyclerView 설정
+        // 인기 게시글 - RecyclerView 설정
         popularPostAdapter = PopularPostAdapter(popularPosts)
         binding.rvPopularPosts.layoutManager = LinearLayoutManager(this)
         binding.rvPopularPosts.adapter = popularPostAdapter
@@ -73,6 +78,33 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, AlarmActivity::class.java)
             startActivity(intent)
         }
+
+        //소속 선택 - 다이얼로그 실행
+        showDialog()
+    }
+
+    private fun showDialog(){
+        val dialog = Dialog(this)
+        dialog.setContentView(R.layout.dialog_check_group)
+
+        val radioGroup : RadioGroup = dialog.findViewById(R.id.radio_group)
+        val dialogButton : Button = dialog.findViewById(R.id.dialog_button)
+
+        dialogButton.setOnClickListener {
+            val selectedId = radioGroup.checkedRadioButtonId
+            if(selectedId != -1){
+                val radioButton:RadioButton = dialog.findViewById(selectedId)
+                val selectedText : String = radioButton.text.toString()
+
+                //여기서 선택된 값을 서버에 전송하도록 처리
+                Toast.makeText(this@HomeActivity, "선택된 소속 : $selectedText", Toast.LENGTH_SHORT).show()
+                dialog.dismiss()
+            }else{
+                Toast.makeText(this@HomeActivity, "소속을 선택해주세요", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        dialog.show()
     }
 
     // 가상의 데이터 생성 함수

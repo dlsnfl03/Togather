@@ -62,4 +62,12 @@
         android:text="@string/alarm_time"
         android:textAppearance="@style/TextAppearance.GDSC_2324.Subtitle02" />
 
+    <ImageButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/icon_cancel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

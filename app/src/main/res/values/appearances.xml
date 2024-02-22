@@ -55,4 +55,10 @@
         <item name="android:textColor">@color/red</item>
     </style>
 
+    <style name="CustomRadioGroup" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="colorAccent">@color/main_org</item>
+        <item name="colorControlNormal">@color/gray_GR2</item>
+    </style>
+
+
 </resources>

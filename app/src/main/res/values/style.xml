@@ -4,4 +4,6 @@
         <item name="android:color">@android:color/transparent</item>
         <item name="android:textColor">@color/gray_GR2</item>
     </style>
+
+
 </resources>
