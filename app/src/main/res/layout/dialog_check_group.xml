@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="소속을 선택해주세요"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio_disability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="장애인"/>
+
+        <RadioButton
+            android:id="@+id/radio_non_disability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비장애인"/>
+
+        <RadioButton
+            android:id="@+id/radio_organization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="소속기관"/>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialog_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_dialog_btn"
+        android:text="확인"
+        android:textStyle="bold"/>
+
+</LinearLayout>

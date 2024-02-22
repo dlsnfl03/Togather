@@ -51,5 +51,6 @@ class ImageDescriptionAdapter(private val context: Context) :
     private fun removeItem(position: Int) {
         imageDescriptions.removeAt(position)
         notifyItemRemoved(position)
+        notifyItemRangeChanged(position, itemCount)
     }
 }
