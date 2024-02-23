@@ -93,6 +93,17 @@
     <string name="home_rv_realtime_like">0</string>
     <string name="home_rv_realtime_comment">2</string>
 
+
+    <!--item borad list-->
+    <string name="item_board_list_title">[SK] 장애 근로자 채용</string>
+    <string name="item_board_list_content">SK 매직에서 장애 근로자를 채용합니다\nSK 매직과 일할 근로자 분은 아래의 지원서를 작성해주시기 바랍니다.</string>
+    <string name="item_board_list_writer">SK매직</string>
+    <string name="item_board_list_date">2024/01/12</string>
+    <string name="item_board_list_time">02:30</string>
+    <string name="item_board_list_like">0</string>
+    <string name="item_board_list_comment">2</string>
+    <string name="item_board_list_scrap">3</string>
+
     <!--more popular-->
     <string name="more_popular_toolbar">실시간 인기글</string>
 
@@ -121,7 +132,6 @@
     <string name="alarm_comment">힘내세요!</string>
     <string name="alarm_date">2024/01/11</string>
     <string name="alarm_time">10:42</string>
-
 
 
     <string name="default_web_client_id">819249599026-7ms2p2q0usqh3np8b9n2hscgpjgmheic.apps.googleusercontent.com</string>

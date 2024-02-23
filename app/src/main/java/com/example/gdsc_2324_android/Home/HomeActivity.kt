@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
@@ -19,6 +20,7 @@ import com.example.gdsc_2324_android.Write.WriteActivity
 import com.example.gdsc_2324_android.alarm.AlarmActivity
 import com.example.gdsc_2324_android.databinding.ActivityHomeBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
+
 
 class HomeActivity : AppCompatActivity() {
 
@@ -79,6 +81,8 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+
+
         //소속 선택 - 다이얼로그 실행
         showDialog()
     }
@@ -86,6 +90,10 @@ class HomeActivity : AppCompatActivity() {
     private fun showDialog(){
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.dialog_check_group)
+
+        // 크기 조절을 위한 설정
+        val width = (resources.displayMetrics.widthPixels * 0.9).toInt() // 다이얼로그의 너비를 화면의 너비의 90%로 설정
+        dialog.window?.setLayout(width, WindowManager.LayoutParams.WRAP_CONTENT)
 
         val radioGroup : RadioGroup = dialog.findViewById(R.id.radio_group)
         val dialogButton : Button = dialog.findViewById(R.id.dialog_button)
