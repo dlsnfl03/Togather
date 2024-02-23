@@ -18,33 +18,54 @@
         android:id="@+id/radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
         <RadioButton
             android:id="@+id/radio_disability"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="장애인"/>
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:background="@drawable/selector_dialog_setgroup"
+            android:text="장애인"
+            android:textColor="@color/black"
+            android:button="@null"/>
 
         <RadioButton
             android:id="@+id/radio_non_disability"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="비장애인"/>
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:background="@drawable/selector_dialog_setgroup"
+            android:text="비장애인"
+            android:textColor="@color/black"
+            android:button="@null"/>
 
         <RadioButton
             android:id="@+id/radio_organization"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="소속기관"/>
+            android:gravity="center"
+            android:background="@drawable/selector_dialog_setgroup"
+            android:button="@null"
+            android:text="소속기관"
+            android:textColor="@color/black"/>
     </RadioGroup>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/dialog_button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/style_dialog_btn"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:textAppearance="@style/TextAppearance.GDSC_2324.Head"
         android:text="확인"
-        android:textStyle="bold"/>
+        android:textColor="@color/main_org" />
 
 </LinearLayout>
