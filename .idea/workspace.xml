@@ -22,7 +22,12 @@
           <theme>@style/Theme.Gdsc_2324_android</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_bottom.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_alarm.xml">
+        <config>
+          <theme>@style/Theme.Gdsc_2324_android</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_board.xml">
         <config>
           <theme>@style/Theme.Gdsc_2324_android</theme>
         </config>
@@ -92,6 +97,21 @@
           <theme>@style/Theme.Gdsc_2324_android</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_check_group.xml">
+        <config>
+          <theme>@style/Theme.Gdsc_2324_android</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_pw.xml">
+        <config>
+          <theme>@style/Theme.Gdsc_2324_android</theme>
+        </config>
+      </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_wrong_pw.xml">
+        <config>
+          <theme>@style/Theme.Gdsc_2324_android</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_find_pw_chkcode.xml">
         <config>
           <theme>@style/Theme.Gdsc_2324_android</theme>
@@ -102,32 +122,7 @@
           <theme>@style/Theme.Gdsc_2324_android</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
-        <config>
-          <theme>@style/Theme.Gdsc_2324_android</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_map.xml">
-        <config>
-          <theme>@style/Theme.Gdsc_2324_android</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_scrap.xml">
-        <config>
-          <theme>@style/Theme.Gdsc_2324_android</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_setting.xml">
-        <config>
-          <theme>@style/Theme.Gdsc_2324_android</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_write.xml">
-        <config>
-          <theme>@style/Theme.Gdsc_2324_android</theme>
-        </config>
-      </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/home.xml">
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_alarm.xml">
         <config>
           <theme>@style/Theme.Gdsc_2324_android</theme>
         </config>
@@ -142,6 +137,11 @@
           <theme>@style/Theme.Gdsc_2324_android</theme>
         </config>
       </layout>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_image_with_description.xml">
+        <config>
+          <theme>@style/Theme.Gdsc_2324_android</theme>
+        </config>
+      </layout>
       <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/item_scrap.xml">
         <config>
           <theme>@style/Theme.Gdsc_2324_android</theme>
@@ -152,18 +152,27 @@
           <theme>@style/Theme.Gdsc_2324_android</theme>
         </config>
       </layout>
-      <layout url="file://$PROJECT_DIR$/app/src/main/res/menu/spinner_write_category.xml">
-        <config>
-          <theme>@style/Theme.Gdsc_2324_android</theme>
-        </config>
-      </layout>
     </layouts>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a60187a-f2e6-4a6c-928d-7f25e2f50f61" name="Changes" comment="" />
+    <list default="true" id="6a60187a-f2e6-4a6c-928d-7f25e2f50f61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -221,15 +230,19 @@
       <list>
         <option value="valueResourceFile" />
         <option value="resourceFile" />
-        <option value="layoutResourceFile" />
         <option value="Class" />
-        <option value="Kotlin Data Class" />
+        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Data Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-appcheck-interop/17.0.0/701273a42de5e0b4a6943611ebf1c2b84dc7504d/firebase-appcheck-interop-17.0.0-sources.jar!/com/google/firebase/appcheck/interop/BuildConfig.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -251,14 +264,26 @@
     &quot;android-custom-view/Users/yujeongseon/Desktop/gdsc_2324/Android/app/src/main/java/com/example/gdsc_2324_android/OutLineTextView.kt_SELECTED&quot;: &quot;OutLineTextView&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/yujeongseon/Desktop/gdsc_2324/Android&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yujeongseon/Desktop/gdsc_2324/Android/app/src/main/res/drawable&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;gradle.compiler&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="android.template.1569087684">
+      <recent name="com.example.gdsc_2324_android" />
+    </key>
+    <key name="android.template.1252657704">
+      <recent name="com.example.gdsc_2324_android" />
+    </key>
+    <key name="android.template.-1554275366">
+      <recent name="com.example.gdsc_2324_android" />
+    </key>
+    <key name="android.template.1602212155">
+      <recent name="com.example.gdsc_2324_android" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
     </key>
@@ -269,16 +294,16 @@
       <recent name="com.example.gdsc_2324_android" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/src/main/res/font" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.gdsc_2324_android.alarm" />
+      <recent name="com.example.gdsc_2324_android.Write" />
       <recent name="com.example.gdsc_2324_android.Scrap" />
       <recent name="com.example.gdsc_2324_android.Home" />
       <recent name="com.example.gdsc_2324_android.SignUp" />
-      <recent name="com.example.gdsc_2324_android.Login" />
-      <recent name="com.example.gdsc_2324_android.FindPw" />
     </key>
     <key name="android.template.222753663">
       <recent name="com.example.gdsc_2324_android" />
@@ -286,14 +311,8 @@
     <key name="android.template.-1228188808">
       <recent name="com.example.gdsc_2324_android" />
     </key>
-    <key name="android.template.-1554275366">
-      <recent name="com.example.gdsc_2324_android" />
-    </key>
     <key name="android.template.618842497">
       <recent name="com.example.gdsc_2324_android.Setting" />
-      <recent name="com.example.gdsc_2324_android" />
-    </key>
-    <key name="android.template.1602212155">
       <recent name="com.example.gdsc_2324_android" />
     </key>
     <key name="android.template.655624020">
@@ -362,7 +381,7 @@
         <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="com.example.gdsc_2324_android.SignUp.StartActivity" />
+      <option name="ACTIVITY_CLASS" value="com.example.gdsc_2324_android.Home.HomeActivity" />
       <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
       <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
       <method v="2">
